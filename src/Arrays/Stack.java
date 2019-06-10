@@ -44,7 +44,7 @@ public class Stack {
   }
 
   private boolean OverFlow() {
-    if (top > stack.length - 1) {
+    if (top >= stack.length - 1) {
       System.out.println("Stack OverFlow");
       return true;
     }
