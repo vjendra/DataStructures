@@ -12,18 +12,12 @@ const treeValueCount = (root, target) => {
   return match + treeValueCount(root.left, target) + treeValueCount(root.right, target);
 };
 
-const a = new Node(12);
-const b = new Node(6);
-const c = new Node(6);
-const d = new Node(4);
-const e = new Node(6);
-const f = new Node(12);
+const a = new Node(12); const b = new Node(6);
+const c = new Node(6); const d = new Node(4);
+const e = new Node(6); const f = new Node(12);
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
+a.left = b; a.right = c; b.left = d;
+b.right = e; c.right = f;
 
 //      12
 //    /   \
